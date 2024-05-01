@@ -9,13 +9,4 @@
     ansible.builtin.debug:
       msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
 
-- name: varaiables
-  hosts: localhost
-  vars:
-    course: "Devops"
-    trainer: "Sivakumar"
-    duration: "3.5 months"
-  tasks:
-  - name: PLAY-2 and Task-1
-    ansible.builtin.debug:
-      msg: "print the message {{course}} {{trainer}} {{cduration}}"
+-
