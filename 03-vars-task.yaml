@@ -5,7 +5,7 @@
     trainer: "Sivakumar"
     duration: "3 months"
   tasks:
-  - name: variales
+  - name: variables with task
     vars:
     course: "ansible"
     ansible.builtin.debug:
