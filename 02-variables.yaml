@@ -14,4 +14,4 @@
   tasks:
   - name: PLAY-2 and Task-1
     ansible.builtin.debug:
-      msg: "print the message {{course, trainer, duration}}"
+      msg: "print the message {{course trainer duration}}"
