@@ -11,3 +11,10 @@
   - name: PLAY-2 and Task-1
     ansible.builtin.debug:
       msg: "print the message Play-2 and Task-1"
+
+- name: multi-play-3
+  hosts: localhost
+  tasks:
+  - name: PLAY-2 and Task-1
+    ansible.builtin.debug:
+      msg: "print the message Play-2 and Task-1"
