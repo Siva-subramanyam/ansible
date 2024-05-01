@@ -2,8 +2,7 @@
   hosts: localhost
   vars_files:
   - vars.yaml
-
-    tasks:
+  tasks:
   - name: variables with task
     vars:
      course: "ansible"
