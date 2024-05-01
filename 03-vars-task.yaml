@@ -10,3 +10,7 @@
      course: "ansible"
     ansible.builtin.debug:
       msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
+
+  - name: variables with task
+    ansible.builtin.debug:
+      msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
