@@ -1,0 +1,12 @@
+- name: varaiables
+  hosts: localhost
+  vars:
+    course: "Devops"
+    trainer: "Sivakumar"
+    duration: "3 months"
+  tasks:
+  - name: variales
+    vars:
+    course: "ansible"
+    ansible.builtin.debug:
+      msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
