@@ -1,4 +1,4 @@
-- name: varaiables
+- name: variables
   hosts: localhost
   vars:
     course: "Devops"
@@ -7,6 +7,6 @@
   tasks:
   - name: variables with task
     vars:
-    course: "ansible"
+     course: "ansible"
     ansible.builtin.debug:
       msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
