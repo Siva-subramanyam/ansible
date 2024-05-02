@@ -1,10 +1,10 @@
 - name: variables from arguments
   hosts: localhost
-  vars_file:
-  - vars.yaml
   vars:
     course: "Devopsvars"
-  vars_prompt: 
+  vars_file:
+  - vars.yaml
+   vars_prompt: 
   - name: course
     prompt: enter course name
     private: false
