@@ -1,4 +1,4 @@
-- name: variables from arguments
+- name: variable from arguments
   hosts: localhost
   vars:
     course: "Devopsvars"
