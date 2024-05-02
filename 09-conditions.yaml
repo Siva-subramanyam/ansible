@@ -1,11 +1,11 @@
-- name: data types
+- name: conditions
   hosts: localhost
   become: yes
   tasks:
   - name: check whether user created or not
     ansible.builtin.command: id expense
-     register: USER
-     ignore_error: true
+    register: USER
+    ignore_error: true
 
   - name: print user info
     ansible.builtin.debug:
