@@ -1,17 +1,17 @@
 - name: data types
   hosts: localhost
   vars:
-    course: "Devops with aws"
-    tools:
+    Course: "Devops with aws"
+    Tools:
     - Sivakumar
     - duration
     - 3 months
-    Experiance:
+    Experience:
       trainer: "sivakumar"
       course: "Devops"
       duration: "120 hours"
-    Real project: true
+    Realproject: true
   tasks:
   - name: print data types
     ansible.builtin.debug:
-      msg: "I am learning {{course}} from {{tools}} and experiance is {{Experiance}} with real projects {{Real project}}"
+      msg: "I am learning {{course}} from {{tools}} and experiance is {{Experience}} with real projects {{Real project}}"
