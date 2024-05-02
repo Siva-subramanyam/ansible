@@ -14,4 +14,4 @@
   tasks:
   - name: print data types
     ansible.builtin.debug:
-      msg: "I am learning {{course}} from {{tools}} and experiance is {{Experience}} with real projects {{Real project}}"
+      msg: "I am learning {{course}} from {{tools}} and experiance is {{Experience}} with real projects {{Realproject}}"
