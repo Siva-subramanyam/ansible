@@ -1,6 +1,5 @@
 - name: varaiables
   hosts: localhost
-
   tasks:
   - name: variales
     ansible.builtin.debug:
