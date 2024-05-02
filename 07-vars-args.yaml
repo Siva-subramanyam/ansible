@@ -1,4 +1,4 @@
-- name: variable from arguments
+- name: varaiables from inventory
   hosts: localhost
   vars:
     course: "Devopsvars"
