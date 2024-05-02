@@ -4,7 +4,7 @@
     course: "Devopsvars"
   vars_file:
   - vars.yaml
-   vars_prompt: 
+  vars_prompt: 
   - name: course
     prompt: enter course name
     private: false
