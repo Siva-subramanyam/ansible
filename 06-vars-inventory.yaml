@@ -1,6 +1,6 @@
-- name: varaiables
+- name: varaiables from inventory
   hosts: localhost
   tasks:
-  - name: variales
+  - name: variales from inventory
     ansible.builtin.debug:
       msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
