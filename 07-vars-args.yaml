@@ -1,6 +1,17 @@
 - name: varaiables from arguments
   hosts: localhost
+  vars_file:
+  - vars.yaml
+  vars:
+    course: "Devopsvars"
+  vars_prompt: 
+  - name: course
+    prompt: enter course name
+      private: false
+
   tasks:
   - name: variales from args
+    vars:
+      course: "Devopstask"
     ansible.builtin.debug:
-      msg: "i am learning {{course}} course, trainer is {{trainer}} and course duration is {{duration}}"
+      msg: "i am learning {{course}} course.
