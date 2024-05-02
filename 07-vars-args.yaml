@@ -13,4 +13,4 @@
     vars:
       course: "Devopstask"
     ansible.builtin.debug:
-      msg: "i am learning {{course}} course.
+      msg: "i am learning {{course}} course."
