@@ -8,7 +8,6 @@
   - name: course
     prompt: enter course name
     private: false
-
   tasks:
   - name: variales from args
     vars:
