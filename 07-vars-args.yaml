@@ -7,7 +7,7 @@
   vars_prompt: 
   - name: course
     prompt: enter course name
-      private: false
+    private: false
 
   tasks:
   - name: variales from args
