@@ -40,3 +40,18 @@
   - name: print Min and Max values
     ansible.builtin.debug:
       msg: " Minimum age is: {{ ages | min }}, Maximum age is: {{ ages | max }}"
+
+- name: varaiables
+  hosts: localhost
+  vars:
+    my_dict:
+      course: "Devops"
+      trainer: "Sivakumar"
+      duration: "3 months"
+  tasks:
+  - name: print dict before convert
+    ansible.builtin.debug:
+      msg: " print {{my_dict}}"
+  - name: print dict wafter convert
+    ansible.builtin.debug:
+      msg: " print {{my_dict | dict2items }}"
