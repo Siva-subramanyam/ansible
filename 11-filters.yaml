@@ -1,0 +1,6 @@
+- name: filter
+  hosts: localhost
+  tasks:
+  - name: vdefault
+    ansible.builtin.debug:
+      msg: "i am learning {{course | default('ansible')}} course"
