@@ -55,3 +55,18 @@
   - name: print dict wafter convert
     ansible.builtin.debug:
       msg: " print {{my_dict | dict2items }}"
+
+- name: varaiables
+  hosts: localhost
+  vars:
+    my_dict:
+    - {'key': 'course', 'value': 'Devops'}
+    - {'key': 'trainer', 'value': 'Sivakumar'}
+    - {'key': 'duration', 'value': '3 months'}
+  tasks:
+  - name: print dict before convert
+    ansible.builtin.debug:
+      msg: " print {{my_dict}}"
+  - name: print dict wafter convert
+    ansible.builtin.debug:
+      msg: " print {{my_dict | items2dict }}"
