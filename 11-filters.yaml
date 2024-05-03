@@ -22,3 +22,12 @@
   - name: vdefault
     ansible.builtin.debug:
       msg: "i am learning {{course | lower }} course"
+
+- name: Duplicates
+  hosts: localhost
+  vars:
+    numbers: [1, 2, 2, 3, 4, 5, 5]
+  tasks:
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}"
