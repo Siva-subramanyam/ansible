@@ -4,3 +4,21 @@
   - name: vdefault
     ansible.builtin.debug:
       msg: "i am learning {{course | default('ansible')}} course"
+
+- name: Upper case
+  hosts: localhost
+  vars:
+    course: "Devops Upper"
+  tasks:
+  - name: vdefault
+    ansible.builtin.debug:
+      msg: "i am learning {{course | upper }} course"
+
+- name: Lower
+  hosts: localhost
+  vars:
+    course: "Devops Lowerr"
+  tasks:
+  - name: vdefault
+    ansible.builtin.debug:
+      msg: "i am learning {{course | lower }} course"
